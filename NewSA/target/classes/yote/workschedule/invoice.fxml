@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yote.workschedule.Controllers.InvoiceController">
+   <children>
+      <Text layoutX="309.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invoice">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Text>
+      <Text layoutX="65.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invoice to :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="584.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invoice  #">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="programInvoiceLabel" layoutX="189.0" layoutY="236.0" text="programInvoiceLabel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateInvoiceLabel" layoutX="189.0" layoutY="286.0" text="dateInvoiceLabel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeInvoiceLabel" layoutX="189.0" layoutY="332.0" text="timeInvoiceLabel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="priceInvoiceLabel" layoutX="187.0" layoutY="377.0" text="priceInvoiceLabel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameInvoiceLabel" layoutX="167.0" layoutY="126.0" text="nameInvoiceLabel">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="invoiceIDLabel" layoutX="674.0" layoutY="133.0" text="invoiceIDLabel" />
+      <Button layoutX="532.0" layoutY="488.0" mnemonicParsing="false" onAction="#handleConfirmInvoiceButton" text="CONFIRM" />
+   </children>
+</AnchorPane>

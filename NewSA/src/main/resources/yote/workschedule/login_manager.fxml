@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yote.workschedule.Controllers.LoginManagerController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="371.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/head.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="roleLabel" layoutX="384.0" layoutY="53.0" prefHeight="84.0" prefWidth="361.0" text="MANAGER" textOverrun="CLIP">
+         <font>
+            <Font name="Arial Bold" size="68.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameLoginTextField" alignment="CENTER" layoutX="428.0" layoutY="214.0" prefHeight="50.0" prefWidth="282.0" promptText="name" style="-fx-background-radius: 100; -fx-background-color: #775b3d#775b3d;">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="round-border" />
+            <String fx:value="primary-color" />
+            <String fx:value="secondary-color" />
+         </styleClass>
+      </TextField>
+      <Label layoutX="439.0" layoutY="179.0" text="NAME" textFill="#775b3d">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="439.0" layoutY="283.0" text="PASSWORD" textFill="#775b3d">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="passwordLoginTextField" alignment="CENTER" layoutX="428.0" layoutY="320.0" prefHeight="50.0" prefWidth="282.0" promptText="password" style="-fx-background-radius: 100; -fx-background-color: #775b3d#775b3d;">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="round-border" />
+            <String fx:value="primary-color" />
+            <String fx:value="secondary-color" />
+         </styleClass>
+      </TextField>
+      <Button layoutX="504.0" layoutY="451.0" mnemonicParsing="false" onAction="#handleManagerLoginButton" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: a1a098; -fx-background-radius: 100;" text="LOGIN" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="loginLabel" layoutX="565.0" layoutY="411.0" />
+      <Button layoutX="104.0" layoutY="502.0" mnemonicParsing="false" onAction="#handleBackToLoginButton" prefHeight="37.0" prefWidth="128.0" style="-fx-background-color: fffcf9; -fx-background-radius: 100;" text="BACK" underline="true">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
