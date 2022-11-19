@@ -11,7 +11,6 @@ public class Select {
     private String detail;
     private String date;
     private String time;
-    private int O_id;
 
     public Select(String o_id, String o_date, String o_time, String o_detail) {
         this.o_id = Integer.parseInt(o_id);
@@ -37,6 +36,12 @@ public class Select {
         this.o_detail = o_detail;
     }
 
+    public void setO_id(int o_id) {
+        this.o_id = o_id;
+    }
+
+
+
     public String getO_status() {
         return o_status;
     }
@@ -47,14 +52,6 @@ public class Select {
 
     public int getO_id() {
         return o_id;
-    }
-
-    public void setO_id(String o_id) {
-        this.o_id = Integer.parseInt(o_id);
-    }
-
-    public void setO_id(int o_id) {
-        O_id = o_id;
     }
 
     public String getO_detail() {

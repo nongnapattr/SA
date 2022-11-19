@@ -139,6 +139,10 @@ public class BookingController {
 //            Statement statement2 = connection.createStatement();
             System.out.println(statement);
             statement.executeUpdate(order);
+            System.out.println("Detail= "+ detail);
+            System.out.println("Amount= "+ amount);
+            System.out.println("time= "+ timeBooking);
+            System.out.println("date= "+ dateBooking);
 //            statement2.executeUpdate(invoice);
             FXRouter.goTo("invoice",detail,dateBooking,timeBooking,amount);
 

@@ -15,6 +15,8 @@ public class Invoice extends Member {
     private String password;
     private String role;
     private String status;
+    private String c_name;
+    private String c_username;
 
     private int i_id;
 
@@ -32,6 +34,20 @@ public class Invoice extends Member {
         this.o_id = Integer.parseInt(o_id);
         this.amount = amount;
         this.i_id = i_id;
+    }
+
+
+    public Invoice(int o_id,String amount,int i_id,int c_id,String o_date,String o_time,String o_detail,String o_status,String c_name,String c_username){
+        this.o_id = o_id;
+        this.amount = amount;
+        this.i_id = i_id;
+        this.c_id = c_id;
+        this.o_date = o_date;
+        this.o_time = o_time;
+        this.o_detail = o_detail;
+        this.o_status = o_status;
+        this.c_name = c_name;
+        this.c_username = c_username;
     }
 
     public Invoice(int o_id, String amount,int o_id1,int c_id,String o_date,String o_time,String o_detail,String o_status, String c_name, int c_id1, String c_tel, String c_username, String c_password,String status, String role) {
@@ -66,6 +82,30 @@ public class Invoice extends Member {
         this.userName = c_username;
         this.password = c_password;
         this.o_status = o_status;
+    }
+
+    public String getC_name() {
+        return c_name;
+    }
+
+    public void setC_name(String c_name) {
+        this.c_name = c_name;
+    }
+
+    public String getC_username() {
+        return c_username;
+    }
+
+    public void setC_username(String c_username) {
+        this.c_username = c_username;
+    }
+
+    public int getI_id() {
+        return i_id;
+    }
+
+    public void setI_id(int i_id) {
+        this.i_id = i_id;
     }
 
     @Override
